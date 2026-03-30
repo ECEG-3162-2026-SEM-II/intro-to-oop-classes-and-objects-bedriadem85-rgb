@@ -10,7 +10,7 @@ public class Main {
         // Example: Student s1 = new Student("Abebe Kassa", 12345);
 
         // --- TODO: Step 3 ---
-        // Instantiate your second student object here
+        // Instantiate  object here
         
         // --- TODO: Step 4 ---
         // Print the details to the console using your getter methods
