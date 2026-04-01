@@ -1,24 +1,32 @@
-name: Java Smoke Test
+public class Student {
 
-on: [push, pull_request]
+    // Private fields (Encapsulation)
+    private String name;
+    private int studentId;
 
-jobs:
-  build:
-    # Use the standard runner (Unlimited free minutes for public repos)
-    runs-on: ubuntu-latest
-    timeout-minutes: 5 
+    // Constructor
+    public Student(String name, int studentId) {
+        this.name = name;
+        this.studentId = studentId;
+    }
 
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
+    // Getter for name
+    public String getName() {
+        return name;
+    }
 
-      - name: Set up JDK 21
-        uses: actions/setup-java@v4
-        with:
-          java-version: '21'
-          distribution: 'temurin'
+    // Setter for name
+    public void setName(String name) {
+        this.name = name;
+    }
 
-      - name: Compile Java Files
-        run: |
-          mkdir -p bin
-          javac -d bin src/*.java
+    // Getter for studentId
+    public int getStudentId() {
+        return studentId;
+    }
+
+    // Setter for studentId
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
+    }
+}
