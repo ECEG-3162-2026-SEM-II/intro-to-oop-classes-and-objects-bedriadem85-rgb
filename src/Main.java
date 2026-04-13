@@ -1,14 +1,33 @@
 
-        public class Main {
-    public static void main(String[] args) {
+        public class Student {
+    // Private fields (Encapsulation)
+    private String name;
+    private int studentId;
 
-        // Create Student objects
-        Student student1 = new Student("Ali", 101);
-        Student student2 = new Student("Sara", 102);
+    // Constructor
+    public Student(String name, int studentId) {
+        this.name = name;
+        this.studentId = studentId;
+    }
 
-        // Print names
-        System.out.println("Student 1 Name: " + student1.getName());
-        System.out.println("Student 2 Name: " + student2.getName());
+    // Getter for name
+    public String getName() {
+        return name;
+    }
+
+    // Setter for name
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter for studentId
+    public int getStudentId() {
+        return studentId;
+    }
+
+    // Setter for studentId
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
     }
 }
       
